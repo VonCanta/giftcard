@@ -27,7 +27,12 @@ describe("A program to subtract an order subttotal from a giftcard", () => {
 	});
 
 
-
+	it('can add the subtotal and tax together',() => {
+		expect(giftcard.getTotal(1))
+			.toBe(7.875);
+		expect(giftcard.getTotal(2))
+			.toBe(15.75);
+	})
 
 
 });

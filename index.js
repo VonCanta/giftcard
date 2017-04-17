@@ -14,10 +14,10 @@ function getTax(orderCount) {
 	return getSubTotal(orderCount) * 0.05;
 }
 
-//function getTotal() {
-	//return getSubTotal(orderCount) + getTax();
+function getTotal(orderCount) {
+	return getSubTotal(orderCount) + getTax(orderCount);
 
-//}
+}
 
 //takeOrder('pan', 'pineapple');
 //takeOrder('ham', 'thin');
@@ -31,4 +31,6 @@ module.exports = {
 	getSubTotal: getSubTotal,
 
 	getTax: getTax,
+
+	getTotal: getTotal,
 }
