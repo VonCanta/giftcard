@@ -7,7 +7,17 @@ describe("A program to subtract an order subttotal from a giftcard", () => {
 			.toBe("Order: thin pizza topped with ham");
 		expect(takeOrder("pineapple","pan"))
 			.toBe("Order: pan pizza topped with pineapple");
+
 	});
 
+
+
+
+
+
+
 });
+
+
+
 
