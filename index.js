@@ -1,13 +1,13 @@
-//var orderCount = 0;
+var orderCount = 0;
 
 function takeOrder(topping, crustType) {
 	return 'Order: ' + crustType + ' pizza topped with ' + topping;
-	//orderCount = orderCount + 1;
+	orderCount = orderCount + 1;
 }
 
-//function getSubTotal(itemcount) {
-	//return itemCount * 7.5;
-//}
+function getSubTotal(orderCount) {
+	return orderCount * 7.5;
+}
 
 //function getTax() {
 	//return getSubTotal(orderCount) * 0.05;
@@ -24,4 +24,8 @@ function takeOrder(topping, crustType) {
 //console.log(getTotal(orderCount));
 
 
-module.exports = takeOrder;
+module.exports = {
+	takeOrder: takeOrder,
+
+	getSubTotal: getSubTotal,
+}
